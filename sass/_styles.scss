@@ -54,10 +54,6 @@ h2 {
 		margin-top: 0.45em;
 
 	}
-	@include break(full) {
-		font-size: 24px;
-		max-width: 400px;
-	}
 }
 
 ul {
@@ -75,9 +71,6 @@ ul {
 		text-align: left;
 		@include break(medium-and-large) {
 			font-size: 22px;
-		}
-		@include break(full) {
-			font-size: 26px;
 		}
 	}
 }
@@ -247,7 +240,15 @@ footer > .links {
 }
 
 
-
+@media only screen and (max-device-width: 499px){
+  #video{
+    width: 90vw !important;
+    height: auto !important;
+  }
+  #play{
+    display: none;
+  }
+}
 
 
 
