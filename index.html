@@ -47,7 +47,7 @@
       <div class="flex-split-right">
 
         <!-- iPhone -->
-        <div class="marvel-device iphone6 silver">
+        <div class="marvel-device iphone6 silver" onclick="playPreview()">
             <div class="top-bar"></div>
             <div class="sleep"></div>
             <div class="volume"></div>
@@ -58,10 +58,13 @@
 
                 <!-- Video Here! -->
                 <div id="video">
-                  <img src="img/ted.png">
                   <div id="play">
-                    <img src="img/play.svg">
+                    <img src="img/play.svg" />
                   </div>
+                  <video poster="img/ted.png" onended="previewEnded()">
+                    <source src="video/preview.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                    <img src="img/ted.png">
+                  </video>
                 </div>
 
             </div>
@@ -82,6 +85,24 @@
           </ul>
         </div>
     </footer>
+
+    <script type="text/javascript">
+    var played = false;
+    var video = document.getElementsByTagName('video')[0];
+    var playButton = document.getElementById('play');
+    function playPreview() {
+      if (played) {
+        window.location = "https://itunes.apple.com/us/app/something-good-to-read/id965641009?ls=1&mt=8";
+      }
+      else {
+        playButton.style.visibility='hidden';
+        video.play();
+      }
+    }
+    function previewEnded() {
+      played = true;
+    }
+    </script>
 
   </body>
 </html>

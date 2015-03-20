@@ -2021,7 +2021,8 @@ ul {
 
 .marvel-device {
   margin: 40px 0;
-  box-sizing: content-box; }
+  box-sizing: content-box;
+  cursor: pointer; }
   @media screen and (min-width: 48em) {
     .marvel-device {
       margin: 0; } }
@@ -2033,6 +2034,9 @@ ul {
   #video img {
     width: 100%;
     height: 100%; }
+
+video {
+  width: 100%; }
 
 #play {
   background: #fff rgba(255, 255, 255, 0.5);
