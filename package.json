@@ -2,24 +2,10 @@
   "name": "something.gd",
   "version": "0.1.0",
   "description": "Something",
-  "homepage": "http://mn-ml.cc",
+  "homepage": "http://something.gd",
   "repository": {
     "type": "git",
     "url": "git://github.com/kidcapricious/something.gd"
-  },
-  "keywords": [
-    "html5",
-    "css",
-    "readability",
-    "responsive design",
-    "rwd",
-    "sass"
-  ],
-  "author": "mrmrs",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mrmrs/mnml/issues",
-    "email": "hi@mrmrs.cc"
   },
   "devDependencies": {
     "browser-sync": "^2.2.1",
