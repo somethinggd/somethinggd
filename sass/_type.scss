@@ -1,0 +1,57 @@
+body {      
+    font-family: Madras;
+    letter-spacing: 0.5px;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+}
+
+h1, h2, h3 { line-height: 1.5; }
+
+h1 {      font-size: 24px; }
+h2 {      font-size: 24px; }
+h3 {      font-size: 24px; }
+li {      font-size: 24px; }
+
+blockquote {  font-size: 32px; }
+p {           font-size: 20px; }
+
+small, .small {       font-size: 12px; }
+
+
+@font-face {
+    font-family: 'Madras';
+    src: url('madrasregular-webfont.eot');
+    src: url('madrasregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('madrasregular-webfont.woff') format('woff'),
+         url('madrasregular-webfont.ttf') format('truetype'),
+         url('madrasregular-webfont.svg#madras_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Madras';
+    src: url('madrasextrabold-webfont.eot');
+    src: url('madrasextrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('madrasextrabold-webfont.woff') format('woff'),
+         url('madrasextrabold-webfont.ttf') format('truetype'),
+         url('madrasextrabold-webfont.svg#madrasextra_bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Madras';
+    src: url('madrasblack-webfont.eot');
+    src: url('madrasblack-webfont.eot?#iefix') format('embedded-opentype'),
+         url('madrasblack-webfont.woff') format('woff'),
+         url('madrasblack-webfont.ttf') format('truetype'),
+         url('madrasblack-webfont.svg#madrasblack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+

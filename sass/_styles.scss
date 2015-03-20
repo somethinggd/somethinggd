@@ -1,0 +1,247 @@
+* {
+	transition: all 0.1s cubic-bezier(0,0.5,0,0.5);
+	box-sizing: border-box;
+}
+
+body {
+	background: #232323;
+	@include break(large) {
+		background: #232323;
+		background-size: cover;
+		background-image: url('../img/bg.svg') no-repeat center;
+	}
+}
+
+///// LEFT
+
+img.icon { 
+	width: 100px;
+	height: 100px;
+	@include break(medium) {
+		width: 116px;
+		height: 116px;
+	}
+	@include break(large) {
+		width: 132px;
+		height: 132px;
+	}
+}
+
+h1 {
+	font-size: 22px;
+	padding-top: 5px;	
+	font-weight: 900;
+	margin: 0.15em 0 0.2em;
+	@include break (medium) {
+		font-size: 24px;
+		margin: 0.25em 0;
+	}
+	@include break (large) {
+		font-size: 28px;
+		margin: 0.25em 0;
+	}
+}
+
+h2 {
+	font-size: 20px;
+	opacity: 0.84;
+	display: block;
+	margin: 0 auto;
+	max-width: 320px;
+	line-height: 1.4;
+	margin-bottom: 1em;
+	@include break(medium-and-large) {
+		margin-top: 0.45em;
+
+	}
+	@include break(full) {
+		font-size: 24px;
+		max-width: 400px;
+	}
+}
+
+ul {
+	padding: 0px;
+	max-width: 100%;
+	display: inline-block;
+	@include break(large) {
+		max-width: 80%;
+		margin: 1em 0 1.25em;
+	}
+	li {
+		font-size: 18px;
+		font-weight: 800;
+		line-height: 2.32;
+		text-align: left;
+		@include break(medium-and-large) {
+			font-size: 22px;
+		}
+		@include break(full) {
+			font-size: 26px;
+		}
+	}
+}
+
+.download {
+	display: inline-block;
+	margin: 0;
+	width: 100%;
+	margin: 30px 0 40px;
+	
+	.button {
+		max-width: 220px;
+		transition: all 0.4s ease;
+		&:hover {
+			box-shadow: 0 0 48px rgba(255,255,255,0.3);
+		}
+	}
+}
+
+
+
+///// RIGHT
+
+.marvel-device {
+	margin: 40px 0;
+	box-sizing: content-box;
+	@include break(large) {
+		margin: 0;
+	}
+
+	.screen > .video img {
+
+	}
+}
+
+#video {
+	position: relative;
+	width: 375px;
+	height: 667px;
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+#play {
+	background: #fff rgba(255,255,255,0.5);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
+#play img {
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	top: 250px;
+	left: 129px;
+}
+
+.links {
+	display: none;
+	@include break(large) {
+		display: block;
+	}
+	ul {
+		li {
+			float: left;
+			font-size: 16px;
+			font-weight: 500;
+			margin-right: 20px;
+			list-style-type: none;
+			a {
+				color: #fff;
+				opacity: 0.65;
+				transition: all 0.3s ease;
+				text-decoration: none;
+			}
+			a:hover {
+				opacity: 1;
+			}
+		}
+		li:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+footer > .links { 
+	text-align: center;
+	display: block;
+	margin-bottom: 2em;
+	@include break(large) {
+		display: none;
+	}
+}
+
+
+
+///// FLEXBOX 
+
+.flexbox .flex-split {
+	display:flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 40px 20px;
+
+	@include break(large) {
+		flex-direction: row;
+		margin: 0 auto;
+		max-width: 100vw;
+		min-height: 100vh;
+		align-items: center; 
+		justify-content: center;
+		padding: 0px;
+	}
+}
+
+.flex-split-left {
+	@include break(large) {
+		width: 640px;
+	}
+}
+
+.flex-split-right {
+	@include break(large) {
+		width: 550px;
+	}
+}
+
+// .flex-split > div {
+// 	@include break(large) {
+// 		width:50%;
+// 	}
+// }
+
+///// NO FLEXBOX
+
+.no-flexbox .flex-split {
+	position:relative;
+	min-height: 800px;
+	min-width: 800px;
+}
+
+.no-flexbox .flex-split > div {
+	min-height:50vh;
+	top:0;
+	bottom:0;
+	float:left;
+	position:absolute;
+}
+
+.no-flexbox .flex-split-left {
+	left:0;
+}
+.no-flexbox .flex-split-right {
+	right:0;
+}
+
+
+
+
+
+
