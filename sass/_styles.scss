@@ -247,7 +247,12 @@ footer > .links {
 }
 
 
-
-
-
-
+@media only screen and (max-device-width: 499px){
+  #video{
+    width: 90vw !important;
+    height: auto !important;
+  }
+  #play{
+    display: none;
+  }
+}
