@@ -84,6 +84,9 @@ h2 {
 	margin-bottom: 1em;
 	@include break(medium-and-large) {
 		margin-top: 0.45em;
+		font-size: 17px;
+		font-style: italic;
+		letter-spacing: -0.25px;
 
 	}
 }
@@ -97,7 +100,6 @@ ul.features {
 		margin: 1em 0 1.25em;
 	}
 	li {
-		font-family: "SF UI Display", "Helvetica Neue";
 		font-size: 17px;
 		font-weight: 600;
 		line-height: 2.4;
