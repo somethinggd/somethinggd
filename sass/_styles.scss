@@ -11,6 +11,7 @@ body {
 	background: -ms-linear-gradient(top, rgba(27,1,45,1) 0%, rgba(0,0,0,1) 100%);
 	background: linear-gradient(to bottom, rgba(27,1,45,1) 0%, rgba(0,0,0,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b012d', endColorstr='#000000', GradientType=0 );
+	background-attachment: fixed;
 }
 
 ///// BACKGROUNDS
@@ -60,7 +61,7 @@ img.icon {
 h1 {
 	font-family: "SF UI Display", "Helvetica Neue";
 	font-size: 19px;
-	padding-top: 5px;	
+	padding-top: 5px;
 	font-weight: 700;
 	margin: 0.15em 0 0.2em;
 	@include break (medium) {
@@ -126,7 +127,7 @@ ul.features {
 	margin: 0;
 	width: 100%;
 	margin: 30px 0 40px;
-	
+
 	.button {
 		max-width: 220px;
 		transition: all 0.25s ease;
@@ -150,7 +151,7 @@ ul.features {
 	.screen > .video img {
 
 	}
-  
+
   cursor: pointer;
 }
 
@@ -225,7 +226,7 @@ video {
 	}
 }
 
-footer > .links { 
+footer > .links {
 	text-align: center;
 	display: block;
 	margin-bottom: 2em;
@@ -236,7 +237,7 @@ footer > .links {
 
 
 
-///// FLEXBOX 
+///// FLEXBOX
 
 .flexbox .flex-split {
 	display:flex;
@@ -249,7 +250,7 @@ footer > .links {
 		margin: 0 auto;
 		max-width: 100vw;
 		min-height: 100vh;
-		align-items: center; 
+		align-items: center;
 		justify-content: center;
 		padding: 0px;
 	}
