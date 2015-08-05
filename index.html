@@ -3,7 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <title>Something Good to Read</title>
+    <title>
+      Something - A Real-time Reading List powered by your Twitter stream
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/main.js"></script>
     <meta name="author" content="AJ">
     <meta name="description" content="Always have something good to read on your iPhone. Flick through the best stories from your Twitter stream.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,14 +34,18 @@
   </head>
   <body>
 
+    <div id="colour"></div>
+    <div id="dots"></div>
+
+
     <div class="flex-split">
 
       <div class="flex-split-left">
 
         <img class="icon" src="img/something.svg">
         <h1>Something</h1>
-        <h2>Flick through the best stories from your Twitter stream, even when you're offline</h2>
-        <ul>
+        <h2>Flick through the best stories from your Twitter stream</h2>
+        <ul class="features">
           <li>No clutter, just articles</li>
           <li>Optimised for your iPhone</li>
           <li>Works when you don't have signal</li>
@@ -129,7 +137,7 @@
     <noscript>
     <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=l5nhn&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
     <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=l5nhn&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" /></noscript>
-  
+
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
