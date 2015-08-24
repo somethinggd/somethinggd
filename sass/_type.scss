@@ -1,5 +1,5 @@
 body {      
-    font-family: Madras, sans-serif;
+    font-family: "SF UI Text", "Helvetica Neue", sans-serif;
     letter-spacing: 0.5px;
     color: #fff;
     text-shadow: 0 1px 0 rgba(0,0,0,0.5);
@@ -17,41 +17,5 @@ p {           font-size: 20px; }
 
 small, .small {       font-size: 12px; }
 
-
-@font-face {
-    font-family: 'Madras';
-    src: url('/fonts/madrasregular-webfont.eot');
-    src: url('/fonts/madrasregular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/madrasregular-webfont.woff') format('woff'),
-         url('/fonts/madrasregular-webfont.ttf') format('truetype'),
-         url('/fonts/madrasregular-webfont.svg#madras_regularregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'Madras';
-    src: url('/fonts/madrasextrabold-webfont.eot');
-    src: url('/fonts/madrasextrabold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/madrasextrabold-webfont.woff') format('woff'),
-         url('/fonts/madrasextrabold-webfont.ttf') format('truetype'),
-         url('/fonts/madrasextrabold-webfont.svg#madrasextra_bold') format('svg');
-    font-weight: 700;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'Madras';
-    src: url('/fonts/madrasblack-webfont.eot');
-    src: url('/fonts/madrasblack-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/madrasblack-webfont.woff') format('woff'),
-         url('/fonts/madrasblack-webfont.ttf') format('truetype'),
-         url('/fonts/madrasblack-webfont.svg#madrasblack') format('svg');
-    font-weight: 900;
-    font-style: normal;
-
-}
 
 
